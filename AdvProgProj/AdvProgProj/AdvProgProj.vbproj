@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7700D64-C686-4155-90F5-668A3A4CC5FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AdvProgProj.My.MyApplication</StartupObject>
+    <RootNamespace>AdvProgProj</RootNamespace>
+    <AssemblyName>AdvProgProj</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AdvProgProj.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AdvProgProj.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cuslog.Designer.vb">
+      <DependentUpon>cuslog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cuslog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cuslog_sign.Designer.vb">
+      <DependentUpon>cuslog_sign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cuslog_sign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editmenu.Designer.vb">
+      <DependentUpon>editmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All.Designer.vb">
+      <DependentUpon>All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="All.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restore.Designer.vb">
+      <DependentUpon>restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateres.Designer.vb">
+      <DependentUpon>updateres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaneForm.Designer.vb">
+      <DependentUpon>PlaneForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlaneForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logmenu.Designer.vb">
+      <DependentUpon>logmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="logmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="Plane.Designer.vb">
+      <DependentUpon>Plane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Plane.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservation.Designer.vb">
+      <DependentUpon>reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffmenu.Designer.vb">
+      <DependentUpon>staffmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="staffmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startmenu.Designer.vb">
+      <DependentUpon>startmenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="usermenu.Designer.vb">
+      <DependentUpon>usermenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usermenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cuslog.resx">
+      <DependentUpon>cuslog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cuslog_sign.resx">
+      <DependentUpon>cuslog_sign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editmenu.resx">
+      <DependentUpon>editmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All.resx">
+      <DependentUpon>All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restore.resx">
+      <DependentUpon>restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateres.resx">
+      <DependentUpon>updateres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaneForm.resx">
+      <DependentUpon>PlaneForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logmenu.resx">
+      <DependentUpon>logmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plane.resx">
+      <DependentUpon>Plane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservation.resx">
+      <DependentUpon>reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffmenu.resx">
+      <DependentUpon>staffmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startmenu.resx">
+      <DependentUpon>startmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usermenu.resx">
+      <DependentUpon>usermenu.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
